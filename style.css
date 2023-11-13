@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: 0.3s;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+
+.container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    max-width: 40vw;
+    
+}
+h1{
+    font-size: 40px;
+}
+
+#quote{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5vh;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    font-family:  'Times New Roman';
+    font-style: italic;
+    font-size: 28px;
+    margin-bottom: 10px;
+    width: 30rem;
+    text-align: justify;
+}
+
+#author{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}
+
+.generate{
+    margin-top: 0px;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FF496C;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*typing effect for not resoponive device*/
+#warn {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em;
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+      
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
+  
+  /* effect end */
+
+
+
+  #warn{
+    display:hide;
+    }
+
+
+@media (max-width: 500px) { /*500<In the resolution devices, hide content and disply message */
+    #warn{
+        display: show;
+    }
+    .container{
+        display: none;
+    }
+
+  }
+
+  @media (min-width: 501px) { /*hide the warning message after coming up with a suitable resolution*/
+    #warn{
+        display: none;
+    }
+
+
+  }
+
+  footer {
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: rgb(10, 7, 7);
+   text-align: center;
+   margin-bottom: 10px;
+
+}
+
+  
+
+
+
