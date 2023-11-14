@@ -19,7 +19,7 @@ body{
     justify-content: center;
     flex-direction: column;
     display: flex;
-    max-width: 40vw;
+    max-width: 500px;
     
 }
 h1{
